@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "native": "cd apps/cool-app && npm start"
+    "native": "cd apps/cool-app && npm start",
+    "clean": "rm -rf node_modules && npm cache clean --force && npm i && npm run native -- --reset-cache"
   },
   "author": "",
   "license": "ISC",
